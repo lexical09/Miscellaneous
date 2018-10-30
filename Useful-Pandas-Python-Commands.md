@@ -2,11 +2,11 @@
 # Read and Write Data
 
 ### Loading Massive Datasets in Smaller Chunks
-chunksize = 500
-chunks = []
-for chunk in pd.read_csv('pizza.csv', chunksize=chunksize):
-    # Do stuff...
-    chunks.append(chunk)
+chunksize = 500 <br>
+chunks = [] <br>
+for chunk in pd.read_csv('pizza.csv', chunksize=chunksize): <br>
+    # Do stuff... <br>
+    chunks.append(chunk) <br>
 
 df = pd.concat(chunks, axis=0)
 
